@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */; };
 		CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A2A2952EBA2002755C0 /* ContentView.swift */; };
-		CD8D4A2D2952EBA3002755C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A2C2952EBA3002755C0 /* Assets.xcassets */; };
 		CD8D4A302952EBA3002755C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */; };
+		CD8D4A372952EF7F002755C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A362952EF7F002755C0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD8D4A252952EBA2002755C0 /* PinCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCryptoApp.swift; sourceTree = "<group>"; };
 		CD8D4A2A2952EBA2002755C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CD8D4A2C2952EBA3002755C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD8D4A362952EF7F002755C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			children = (
 				CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */,
 				CD8D4A2A2952EBA2002755C0 /* ContentView.swift */,
-				CD8D4A2C2952EBA3002755C0 /* Assets.xcassets */,
+				CD8D4A362952EF7F002755C0 /* Assets.xcassets */,
 				CD8D4A2E2952EBA3002755C0 /* Preview Content */,
 			);
 			path = PinCrypto;
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD8D4A302952EBA3002755C0 /* Preview Assets.xcassets in Resources */,
-				CD8D4A2D2952EBA3002755C0 /* Assets.xcassets in Resources */,
+				CD8D4A372952EF7F002755C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
