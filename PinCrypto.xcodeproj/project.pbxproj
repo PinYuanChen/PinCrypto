@@ -18,6 +18,7 @@
 		CD8D4A452952F09B002755C0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A3F2952F09B002755C0 /* Date.swift */; };
 		CD8D4A4C2952F2B7002755C0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A4B2952F2B7002755C0 /* HomeView.swift */; };
 		CD8D4A4F2952F3AC002755C0 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A4E2952F3AC002755C0 /* CircleButtonView.swift */; };
+		CDF9D5FF2952FD9B00B09CD6 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9D5FE2952FD9B00B09CD6 /* CircleButtonAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		CD8D4A3F2952F09B002755C0 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		CD8D4A4B2952F2B7002755C0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CD8D4A4E2952F3AC002755C0 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		CDF9D5FE2952FD9B00B09CD6 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				CD8D4A4E2952F3AC002755C0 /* CircleButtonView.swift */,
+				CDF9D5FE2952FD9B00B09CD6 /* CircleButtonAnimationView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				CD8D4A432952F09B002755C0 /* Double.swift in Sources */,
 				CD8D4A4C2952F2B7002755C0 /* HomeView.swift in Sources */,
 				CD8D4A4F2952F3AC002755C0 /* CircleButtonView.swift in Sources */,
+				CDF9D5FF2952FD9B00B09CD6 /* CircleButtonAnimationView.swift in Sources */,
 				CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */,
 				CD8D4A442952F09B002755C0 /* Color.swift in Sources */,
 			);
