@@ -16,7 +16,8 @@
 		CD8D4A432952F09B002755C0 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A3D2952F09B002755C0 /* Double.swift */; };
 		CD8D4A442952F09B002755C0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A3E2952F09B002755C0 /* Color.swift */; };
 		CD8D4A452952F09B002755C0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A3F2952F09B002755C0 /* Date.swift */; };
-		CD8D4A462952F09B002755C0 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A402952F09B002755C0 /* PreviewProvider.swift */; };
+		CD8D4A4C2952F2B7002755C0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A4B2952F2B7002755C0 /* HomeView.swift */; };
+		CD8D4A4F2952F3AC002755C0 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A4E2952F3AC002755C0 /* CircleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,8 @@
 		CD8D4A3D2952F09B002755C0 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		CD8D4A3E2952F09B002755C0 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CD8D4A3F2952F09B002755C0 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		CD8D4A402952F09B002755C0 /* PreviewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		CD8D4A4B2952F2B7002755C0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CD8D4A4E2952F3AC002755C0 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */,
 				CD8D4A2A2952EBA2002755C0 /* ContentView.swift */,
+				CD8D4A472952F25C002755C0 /* Core */,
 				CD8D4A3A2952F06B002755C0 /* Extensions */,
 				CD8D4A362952EF7F002755C0 /* Assets.xcassets */,
 				CD8D4A2E2952EBA3002755C0 /* Preview Content */,
@@ -86,11 +89,51 @@
 				CD8D4A3E2952F09B002755C0 /* Color.swift */,
 				CD8D4A3F2952F09B002755C0 /* Date.swift */,
 				CD8D4A3D2952F09B002755C0 /* Double.swift */,
-				CD8D4A402952F09B002755C0 /* PreviewProvider.swift */,
 				CD8D4A3B2952F09B002755C0 /* String.swift */,
 				CD8D4A3C2952F09B002755C0 /* UIApplication.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD8D4A472952F25C002755C0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D4A4D2952F396002755C0 /* Components */,
+				CD8D4A482952F26F002755C0 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CD8D4A482952F26F002755C0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D4A4A2952F291002755C0 /* Views */,
+				CD8D4A492952F285002755C0 /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CD8D4A492952F285002755C0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CD8D4A4A2952F291002755C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D4A4B2952F2B7002755C0 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD8D4A4D2952F396002755C0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D4A4E2952F3AC002755C0 /* CircleButtonView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +211,8 @@
 				CD8D4A452952F09B002755C0 /* Date.swift in Sources */,
 				CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */,
 				CD8D4A432952F09B002755C0 /* Double.swift in Sources */,
-				CD8D4A462952F09B002755C0 /* PreviewProvider.swift in Sources */,
+				CD8D4A4C2952F2B7002755C0 /* HomeView.swift in Sources */,
+				CD8D4A4F2952F3AC002755C0 /* CircleButtonView.swift in Sources */,
 				CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */,
 				CD8D4A442952F09B002755C0 /* Color.swift in Sources */,
 			);
