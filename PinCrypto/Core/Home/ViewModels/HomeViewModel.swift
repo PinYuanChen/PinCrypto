@@ -5,6 +5,7 @@
 import Foundation
 
 class HomeViewModel: ObservableObject {
+    
     @Published var allCoins = [CoinModel]()
     @Published var portfolioCoins = [CoinModel]()
     
