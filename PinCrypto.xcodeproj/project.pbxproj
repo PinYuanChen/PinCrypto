@@ -25,6 +25,7 @@
 		CDF9D6082954279000B09CD6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9D6072954279000B09CD6 /* HomeViewModel.swift */; };
 		CDF9D60B2954375D00B09CD6 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9D60A2954375D00B09CD6 /* CoinDataService.swift */; };
 		CDF9D60E29543EE300B09CD6 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9D60D29543EE300B09CD6 /* NetworkingManager.swift */; };
+		CDF9D6102954503700B09CD6 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9D60F2954503700B09CD6 /* CoinImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		CDF9D6072954279000B09CD6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CDF9D60A2954375D00B09CD6 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		CDF9D60D29543EE300B09CD6 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		CDF9D60F2954503700B09CD6 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				CD8D4A4E2952F3AC002755C0 /* CircleButtonView.swift */,
 				CDF9D5FE2952FD9B00B09CD6 /* CircleButtonAnimationView.swift */,
+				CDF9D60F2954503700B09CD6 /* CoinImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				CD8D4A4C2952F2B7002755C0 /* HomeView.swift in Sources */,
 				CD8D4A4F2952F3AC002755C0 /* CircleButtonView.swift in Sources */,
 				CDF9D6082954279000B09CD6 /* HomeViewModel.swift in Sources */,
+				CDF9D6102954503700B09CD6 /* CoinImageView.swift in Sources */,
 				CDF9D5FF2952FD9B00B09CD6 /* CircleButtonAnimationView.swift in Sources */,
 				CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */,
 				CD8D4A442952F09B002755C0 /* Color.swift in Sources */,
