@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD525E6B29594AFA008CB800 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E6A29594AFA008CB800 /* MarketDataService.swift */; };
 		CD525E6D29596955008CB800 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E6C29596955008CB800 /* PortfolioView.swift */; };
+		CD525E6F295976CA008CB800 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E6E295976CA008CB800 /* XMarkButton.swift */; };
 		CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */; };
 		CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A2A2952EBA2002755C0 /* ContentView.swift */; };
 		CD8D4A302952EBA3002755C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		CD525E6A29594AFA008CB800 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		CD525E6C29596955008CB800 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		CD525E6E295976CA008CB800 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		CD8D4A252952EBA2002755C0 /* PinCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCryptoApp.swift; sourceTree = "<group>"; };
 		CD8D4A2A2952EBA2002755C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				CDF9D6132954542500B09CD6 /* CoinImage */,
 				CDDB347F29558269002CEDE7 /* SearchBarView.swift */,
 				CDDB34832955926D002CEDE7 /* StatisticView.swift */,
+				CD525E6E295976CA008CB800 /* XMarkButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				CDF9D6042954058E00B09CD6 /* CoinRowView.swift in Sources */,
 				CD8D4A422952F09B002755C0 /* UIApplication.swift in Sources */,
 				CD8D4A412952F09B002755C0 /* String.swift in Sources */,
+				CD525E6F295976CA008CB800 /* XMarkButton.swift in Sources */,
 				CDF9D60B2954375D00B09CD6 /* CoinDataService.swift in Sources */,
 				CD8D4A452952F09B002755C0 /* Date.swift in Sources */,
 				CDF9D60E29543EE300B09CD6 /* NetworkingManager.swift in Sources */,
