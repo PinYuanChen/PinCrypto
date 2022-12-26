@@ -5,8 +5,27 @@
 import SwiftUI
 
 struct PortfolioView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Portfolio")
+                }
+            }
+            .navigationTitle("Edit Portfolio")
+            .navigationBarItems(
+                leading:
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        Image(systemName: "xmark")
+                            .font(.headline)
+                    })
+            )
+        }
     }
 }
 
