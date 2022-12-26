@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD525E6B29594AFA008CB800 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E6A29594AFA008CB800 /* MarketDataService.swift */; };
 		CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */; };
 		CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A2A2952EBA2002755C0 /* ContentView.swift */; };
 		CD8D4A302952EBA3002755C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD525E6A29594AFA008CB800 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		CD8D4A252952EBA2002755C0 /* PinCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCryptoApp.swift; sourceTree = "<group>"; };
 		CD8D4A2A2952EBA2002755C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				CDF9D60A2954375D00B09CD6 /* CoinDataService.swift */,
+				CD525E6A29594AFA008CB800 /* MarketDataService.swift */,
 				CDF9D6112954527B00B09CD6 /* CoinImageService.swift */,
 			);
 			path = Services;
@@ -307,6 +310,7 @@
 				CD8D4A432952F09B002755C0 /* Double.swift in Sources */,
 				CDDB348029558269002CEDE7 /* SearchBarView.swift in Sources */,
 				CD8D4A4C2952F2B7002755C0 /* HomeView.swift in Sources */,
+				CD525E6B29594AFA008CB800 /* MarketDataService.swift in Sources */,
 				CDDB348229559119002CEDE7 /* StatisticModel.swift in Sources */,
 				CD8D4A4F2952F3AC002755C0 /* CircleButtonView.swift in Sources */,
 				CDDB34842955926D002CEDE7 /* StatisticView.swift in Sources */,
