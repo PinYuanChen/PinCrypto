@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD525E6B29594AFA008CB800 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E6A29594AFA008CB800 /* MarketDataService.swift */; };
+		CD525E6D29596955008CB800 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E6C29596955008CB800 /* PortfolioView.swift */; };
 		CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */; };
 		CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A2A2952EBA2002755C0 /* ContentView.swift */; };
 		CD8D4A302952EBA3002755C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		CD525E6A29594AFA008CB800 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
+		CD525E6C29596955008CB800 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		CD8D4A252952EBA2002755C0 /* PinCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCryptoApp.swift; sourceTree = "<group>"; };
 		CD8D4A2A2952EBA2002755C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CD8D4A4B2952F2B7002755C0 /* HomeView.swift */,
+				CD525E6C29596955008CB800 /* PortfolioView.swift */,
 				CDDB3485295595D3002CEDE7 /* HomeStatsView.swift */,
 				CDF9D6032954058E00B09CD6 /* CoinRowView.swift */,
 			);
@@ -304,6 +307,7 @@
 				CD8D4A452952F09B002755C0 /* Date.swift in Sources */,
 				CDF9D60E29543EE300B09CD6 /* NetworkingManager.swift in Sources */,
 				CDDB3486295595D3002CEDE7 /* HomeStatsView.swift in Sources */,
+				CD525E6D29596955008CB800 /* PortfolioView.swift in Sources */,
 				CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */,
 				CDDB347E29557242002CEDE7 /* LocalFileManager.swift in Sources */,
 				CDF9D60229530F0B00B09CD6 /* CoinModel.swift in Sources */,

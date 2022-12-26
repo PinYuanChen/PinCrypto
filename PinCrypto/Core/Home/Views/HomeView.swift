@@ -16,6 +16,9 @@ struct HomeView: View {
                 .theme
                 .background
                 .ignoresSafeArea()
+                .sheet(isPresented: $showPortfolio) {
+                    PortfolioView()
+                }
             
             // content layer
             VStack {
@@ -53,7 +56,12 @@ private extension HomeView {
     var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
-                .transaction { $0.animation = .none }
+                .animation(.none, value: showPortfolio)
+                .onTapGesture {
+                    if showPortfolio {
+                        showPortfolio.toggle()
+                    }
+                }
                 .background(
                     CircleButtonAnimationView(animate: $showPortfolio)
                 )
@@ -62,12 +70,12 @@ private extension HomeView {
                 .font(.headline)
                 .fontWeight(.heavy)
                 .foregroundColor(.theme.accent)
-                .transaction { $0.animation = .none }
+                .animation(.none, value: showPortfolio)
             Spacer()
             CircleButtonView(iconName: "chevron.right")
                 .rotationEffect(.degrees(showPortfolio ? 180 : 0))
                 .onTapGesture {
-                    withAnimation {
+                    withAnimation(.spring()) {
                         showPortfolio.toggle()
                     }
                 }
