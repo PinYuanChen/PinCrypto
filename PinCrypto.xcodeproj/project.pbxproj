@@ -11,6 +11,8 @@
 		CD525E6D29596955008CB800 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E6C29596955008CB800 /* PortfolioView.swift */; };
 		CD525E6F295976CA008CB800 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E6E295976CA008CB800 /* XMarkButton.swift */; };
 		CD525E7129597C58008CB800 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E7029597C58008CB800 /* CoinLogoView.swift */; };
+		CD525E74295A8CA2008CB800 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD525E72295A8CA2008CB800 /* PortfolioContainer.xcdatamodeld */; };
+		CD525E76295A8DC8008CB800 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E75295A8DC8008CB800 /* PortfolioDataService.swift */; };
 		CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */; };
 		CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A2A2952EBA2002755C0 /* ContentView.swift */; };
 		CD8D4A302952EBA3002755C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		CD525E6C29596955008CB800 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		CD525E6E295976CA008CB800 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		CD525E7029597C58008CB800 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
+		CD525E73295A8CA2008CB800 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
+		CD525E75295A8DC8008CB800 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		CD8D4A252952EBA2002755C0 /* PinCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCryptoApp.swift; sourceTree = "<group>"; };
 		CD8D4A2A2952EBA2002755C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +198,7 @@
 				CDF9D60129530F0B00B09CD6 /* CoinModel.swift */,
 				CDDB34872955A83B002CEDE7 /* MarketDataModel.swift */,
 				CDDB348129559119002CEDE7 /* StatisticModel.swift */,
+				CD525E72295A8CA2008CB800 /* PortfolioContainer.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				CDF9D60A2954375D00B09CD6 /* CoinDataService.swift */,
 				CD525E6A29594AFA008CB800 /* MarketDataService.swift */,
 				CDF9D6112954527B00B09CD6 /* CoinImageService.swift */,
+				CD525E75295A8DC8008CB800 /* PortfolioDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				CD8D4A452952F09B002755C0 /* Date.swift in Sources */,
 				CDF9D60E29543EE300B09CD6 /* NetworkingManager.swift in Sources */,
 				CDDB3486295595D3002CEDE7 /* HomeStatsView.swift in Sources */,
+				CD525E76295A8DC8008CB800 /* PortfolioDataService.swift in Sources */,
+				CD525E74295A8CA2008CB800 /* PortfolioContainer.xcdatamodeld in Sources */,
 				CD525E6D29596955008CB800 /* PortfolioView.swift in Sources */,
 				CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */,
 				CDDB347E29557242002CEDE7 /* LocalFileManager.swift in Sources */,
@@ -541,6 +549,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD525E72295A8CA2008CB800 /* PortfolioContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD525E73295A8CA2008CB800 /* PortfolioContainer.xcdatamodel */,
+			);
+			currentVersion = CD525E73295A8CA2008CB800 /* PortfolioContainer.xcdatamodel */;
+			path = PortfolioContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD8D4A1D2952EBA2002755C0 /* Project object */;
 }
