@@ -36,15 +36,7 @@ class HomeViewModel: ObservableObject {
         // update portfolio with filtered coins
         $allCoins
             .combineLatest(portfolioDataService.$savedEntities)
-            .map { (coinModels, portfolioEntities) -> [CoinModel] in
-                coinModels
-                    .compactMap { coin -> CoinModel? in
-                        guard let entity = portfolioEntities.first(where: { $0.coinID == coin.id }) else {
-                            return nil
-                        }
-                        return coin.updateHoldings(amount: entity.amount)
-                    }
-            }
+            .map(mapAllCoinsToPortfolioCoins)
             .sink { [weak self] returnedCoins in
                 self?.portfolioCoins = returnedCoins
             }
@@ -75,6 +67,17 @@ private extension HomeViewModel {
             $0.symbol.lowercased().contains(lowercasedText) ||
             $0.id.lowercased().contains(lowercasedText)
         }
+    }
+    
+    func mapAllCoinsToPortfolioCoins(allCoins: [CoinModel],
+                                     portfolioEntities: [PortfolioEntity]) -> [CoinModel] {
+        allCoins
+            .compactMap { coin -> CoinModel? in
+                guard let entity = portfolioEntities.first(where: { $0.coinID == coin.id }) else {
+                    return nil
+                }
+                return coin.updateHoldings(amount: entity.amount)
+            }
     }
     
     func mapGlobalMarketData(marketDataModel: MarketDataModel?,
