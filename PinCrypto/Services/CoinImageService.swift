@@ -30,10 +30,8 @@ private extension CoinImageService {
             folderName: folderName
         ) {
             image = savedImage
-            print("Retrieved image from File Manager!")
         } else {
             downloadCoinImage()
-            print("Downloading image now")
         }
     }
     
