@@ -44,7 +44,7 @@ struct HomeView: View {
             }
         }
         .background(
-            NavigationLink(destination: DetailView(coin: $selectedCoin),
+            NavigationLink(destination: DetailLoadingView(coin: $selectedCoin),
                            isActive: $showDetailView,
                            label: { EmptyView() })
         )
@@ -82,7 +82,7 @@ private extension HomeView {
                 .animation(.none, value: showPortfolio)
             Spacer()
             CircleButtonView(iconName: "chevron.right")
-                .rotationEffect(.degrees(showPortfolio ? 180 : 0))
+                .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
                 .onTapGesture {
                     withAnimation(.spring()) {
                         showPortfolio.toggle()
@@ -157,12 +157,12 @@ private extension HomeView {
                     .opacity( (vm.sortOption == .price || vm.sortOption == .priceReversed) ? 1.0 : 0.0)
                     .rotationEffect(.init(degrees: vm.sortOption == .price ? 0 : 180))
             }
-                .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
-                .onTapGesture {
-                    withAnimation(.default) {
-                        vm.sortOption = (vm.sortOption == .price) ? .priceReversed : .price
-                    }
+            .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+            .onTapGesture {
+                withAnimation(.default) {
+                    vm.sortOption = (vm.sortOption == .price) ? .priceReversed : .price
                 }
+            }
             
             Button {
                 withAnimation(.linear(duration: 2.0)) {

@@ -19,6 +19,7 @@ struct CoinRowView: View {
             rightColumn
         }
         .font(.subheadline)
+        .contentShape(Rectangle()) // for user to click the whole row
     }
 }
 
