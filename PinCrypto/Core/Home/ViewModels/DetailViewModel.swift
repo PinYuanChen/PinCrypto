@@ -5,7 +5,7 @@
 import Foundation
 import Combine
 
-class DetailViewModel {
+class DetailViewModel: ObservableObject {
     
     init(coin: CoinModel) {
         self.coinDetailService = CoinDetailDataService(coin: coin)
