@@ -45,6 +45,8 @@ struct DetailView: View {
                     additionalTitle
                     Divider()
                     additionalGrid
+                    
+                    websiteSection
                 }
                 .padding()
             }
@@ -72,7 +74,7 @@ private extension DetailView {
         HStack {
             Text(vm.coin.symbol.uppercased())
                 .font(.headline)
-            .foregroundColor(.theme.secondaryText)
+                .foregroundColor(.theme.secondaryText)
             CoinImageView(coin: vm.coin)
                 .frame(width: 25, height: 25)
         }
@@ -98,21 +100,20 @@ private extension DetailView {
                !coinDesc.isEmpty {
                 VStack(alignment: .leading) {
                     Text(coinDesc)
+                        .animation(showFullDesc ? .easeInOut : .none)
                         .lineLimit(showFullDesc ? nil : 3)
                         .font(.callout)
                         .foregroundColor(.theme.secondaryText)
                     
                     Button {
-                        withAnimation(.easeInOut) {
-                            showFullDesc.toggle()
-                        }
+                        showFullDesc.toggle()
                     } label: {
                         Text(showFullDesc ? "Less" : "Read more...")
                             .font(.caption)
                             .fontWeight(.bold)
                             .padding(.vertical, 4)
                     }
-                    .accentColor(.blue)
+                    .tint(.blue)
                     
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -142,5 +143,22 @@ private extension DetailView {
                     StatisticView(stat: stat)
                 }
             }
+    }
+    
+    var websiteSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            if let website = vm.websietURL,
+               let url = URL(string: website) {
+                Link("Website", destination: url)
+            }
+            
+            if let reddit = vm.redditURL,
+               let url = URL(string: reddit) {
+                Link("Reddit", destination: url)
+            }
+        }
+        .tint(.blue)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .font(.headline)
     }
 }
