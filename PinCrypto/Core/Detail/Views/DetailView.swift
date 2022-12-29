@@ -47,8 +47,8 @@ struct DetailView: View {
                     alignment: .leading,
                     spacing: spacing,
                     pinnedViews: []) {
-                        ForEach(0..<6) { _ in
-                            StatisticView(stat: .init(title: "title", value: "value"))
+                        ForEach(vm.overviewStats) { stat in
+                            StatisticView(stat: stat)
                         }
                     }
                 
@@ -61,8 +61,8 @@ struct DetailView: View {
                     alignment: .leading,
                     spacing: spacing,
                     pinnedViews: []) {
-                        ForEach(0..<6) { _ in
-                            StatisticView(stat: .init(title: "title", value: "value"))
+                        ForEach(vm.additionalStats) { stat in
+                            StatisticView(stat: stat)
                         }
                     }
                 Divider()
