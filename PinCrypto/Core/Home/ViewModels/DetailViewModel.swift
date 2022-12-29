@@ -9,7 +9,9 @@ class DetailViewModel: ObservableObject {
     
     @Published var overviewStats = [StatisticModel]()
     @Published var additionalStats = [StatisticModel]()
-    
+    @Published var coinDescription: String?
+    @Published var websietURL: String?
+    @Published var redditURL: String?
     @Published var coin: CoinModel
     
     init(coin: CoinModel) {
@@ -31,6 +33,15 @@ private extension DetailViewModel {
             .sink { [weak self] returnedArrays in
                 self?.overviewStats = returnedArrays.overview
                 self?.additionalStats = returnedArrays.additional
+            }
+            .store(in: &cancellables)
+        
+        coinDetailService
+            .$coinDetail
+            .sink { [weak self] returnedCoinDetail in
+                self?.coinDescription = returnedCoinDetail?.readableDescription
+                self?.websietURL = returnedCoinDetail?.links?.homepage?.first
+                self?.redditURL = returnedCoinDetail?.links?.subredditURL
             }
             .store(in: &cancellables)
     }
