@@ -20,6 +20,7 @@ struct DetailLoadingView: View {
 struct DetailView: View {
     
     @StateObject private var vm: DetailViewModel
+    @State private var showFullDesc = false
     private let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -37,14 +38,7 @@ struct DetailView: View {
                     .padding(.vertical)
                 VStack(spacing: 20) {
                     overviewTitle
-                    
-                    ZStack {
-                        if let coinDesc = vm.coinDescription,
-                           !coinDesc.isEmpty {
-                            Text(coinDesc)
-                        }
-                    }
-                    
+                    descriptionSection
                     Divider()
                     overviewGrid
                     
@@ -96,6 +90,34 @@ private extension DetailView {
             .font(.title)
             .foregroundColor(.theme.accent)
             .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    var descriptionSection: some View {
+        ZStack {
+            if let coinDesc = vm.coinDescription,
+               !coinDesc.isEmpty {
+                VStack(alignment: .leading) {
+                    Text(coinDesc)
+                        .lineLimit(showFullDesc ? nil : 3)
+                        .font(.callout)
+                        .foregroundColor(.theme.secondaryText)
+                    
+                    Button {
+                        withAnimation(.easeInOut) {
+                            showFullDesc.toggle()
+                        }
+                    } label: {
+                        Text(showFullDesc ? "Less" : "Read more...")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .padding(.vertical, 4)
+                    }
+                    .accentColor(.blue)
+                    
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
     }
     
     var overviewGrid: some View {
