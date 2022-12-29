@@ -16,9 +16,6 @@ struct CircleButtonAnimationView: View {
             .transaction {
                 $0.animation = animate ? .easeOut(duration: 1.0) : .none
             }
-            .onAppear {
-                animate.toggle()
-            }
     }
 }
 

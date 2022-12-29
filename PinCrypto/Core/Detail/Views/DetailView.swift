@@ -19,19 +19,64 @@ struct DetailLoadingView: View {
 
 struct DetailView: View {
     
-    @StateObject var vm: DetailViewModel
+    @StateObject private var vm: DetailViewModel
+    private let columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    private let spacing: CGFloat = 30
     
     init(coin: CoinModel) {
         _vm = StateObject(wrappedValue: DetailViewModel(coin: coin))
     }
     
     var body: some View {
-        Text("hello")
+        ScrollView {
+            VStack(spacing: 20) {
+                Text("")
+                    .frame(height: 150)
+                
+                Text("Overview")
+                    .font(.title)
+                    .foregroundColor(.theme.accent)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Divider()
+                
+                LazyVGrid(
+                    columns: columns,
+                    alignment: .leading,
+                    spacing: spacing,
+                    pinnedViews: []) {
+                        ForEach(0..<6) { _ in
+                            StatisticView(stat: .init(title: "title", value: "value"))
+                        }
+                    }
+                
+                Text("Additional Details")
+                    .font(.title)
+                    .foregroundColor(.theme.accent)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                LazyVGrid(
+                    columns: columns,
+                    alignment: .leading,
+                    spacing: spacing,
+                    pinnedViews: []) {
+                        ForEach(0..<6) { _ in
+                            StatisticView(stat: .init(title: "title", value: "value"))
+                        }
+                    }
+                Divider()
+            }
+            .padding()
+        }
+        .navigationTitle(vm.coin.name)
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(coin: dev.coin)
+        NavigationView {
+            DetailView(coin: dev.coin)
+        }
     }
 }
