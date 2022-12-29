@@ -36,36 +36,13 @@ struct DetailView: View {
                 Text("")
                     .frame(height: 150)
                 
-                Text("Overview")
-                    .font(.title)
-                    .foregroundColor(.theme.accent)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                overviewTitle
                 Divider()
+                overviewGrid
                 
-                LazyVGrid(
-                    columns: columns,
-                    alignment: .leading,
-                    spacing: spacing,
-                    pinnedViews: []) {
-                        ForEach(vm.overviewStats) { stat in
-                            StatisticView(stat: stat)
-                        }
-                    }
-                
-                Text("Additional Details")
-                    .font(.title)
-                    .foregroundColor(.theme.accent)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                LazyVGrid(
-                    columns: columns,
-                    alignment: .leading,
-                    spacing: spacing,
-                    pinnedViews: []) {
-                        ForEach(vm.additionalStats) { stat in
-                            StatisticView(stat: stat)
-                        }
-                    }
+                additionalTitle
                 Divider()
+                additionalGrid
             }
             .padding()
         }
@@ -78,5 +55,45 @@ struct DetailView_Previews: PreviewProvider {
         NavigationView {
             DetailView(coin: dev.coin)
         }
+    }
+}
+
+private extension DetailView {
+    var overviewTitle: some View {
+        Text("Overview")
+            .font(.title)
+            .foregroundColor(.theme.accent)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    var additionalTitle: some View {
+        Text("Additional Details")
+            .font(.title)
+            .foregroundColor(.theme.accent)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    var overviewGrid: some View {
+        LazyVGrid(
+            columns: columns,
+            alignment: .leading,
+            spacing: spacing,
+            pinnedViews: []) {
+                ForEach(vm.overviewStats) { stat in
+                    StatisticView(stat: stat)
+                }
+            }
+    }
+    
+    var additionalGrid: some View {
+        LazyVGrid(
+            columns: columns,
+            alignment: .leading,
+            spacing: spacing,
+            pinnedViews: []) {
+                ForEach(vm.additionalStats) { stat in
+                    StatisticView(stat: stat)
+                }
+            }
     }
 }
