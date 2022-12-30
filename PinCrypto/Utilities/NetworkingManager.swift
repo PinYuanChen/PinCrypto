@@ -21,11 +21,19 @@ class NetworkingManager {
         }
     }
     
-    static func download(url: URL) -> AnyPublisher<Data, Error> {
+    static func downloadImage(url: URL) -> AnyPublisher<Data, Error> {
         return URLSession.shared.dataTaskPublisher(for: url)
-            .subscribe(on: DispatchQueue.global(qos: .default))
             .tryMap { try handleURLResponse(output: $0, url: url) }
+            .retry(1)
+            .eraseToAnyPublisher()
+    }
+    
+    static func download<T: Codable>(url: URL, type: T.Type) -> AnyPublisher<T, Error> {
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .tryMap { try handleURLResponse(output: $0, url: url) }
+            .decode(type: T.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
+            .retry(1)
             .eraseToAnyPublisher()
     }
     

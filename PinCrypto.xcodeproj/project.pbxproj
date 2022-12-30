@@ -17,7 +17,6 @@
 		CD525E74295A8CA2008CB800 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD525E72295A8CA2008CB800 /* PortfolioContainer.xcdatamodeld */; };
 		CD525E76295A8DC8008CB800 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E75295A8DC8008CB800 /* PortfolioDataService.swift */; };
 		CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */; };
-		CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A2A2952EBA2002755C0 /* ContentView.swift */; };
 		CD8D4A302952EBA3002755C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */; };
 		CD8D4A372952EF7F002755C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A362952EF7F002755C0 /* Assets.xcassets */; };
 		CD8D4A412952F09B002755C0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A3B2952F09B002755C0 /* String.swift */; };
@@ -63,7 +62,6 @@
 		CD525E75295A8DC8008CB800 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		CD8D4A252952EBA2002755C0 /* PinCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCryptoApp.swift; sourceTree = "<group>"; };
-		CD8D4A2A2952EBA2002755C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD8D4A362952EF7F002755C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		CD8D4A3B2952F09B002755C0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */,
-				CD8D4A2A2952EBA2002755C0 /* ContentView.swift */,
 				CDF9D60C29543E9C00B09CD6 /* Utilities */,
 				CDF9D60029530F0000B09CD6 /* Models */,
 				CD8D4A472952F25C002755C0 /* Core */,
@@ -400,7 +397,6 @@
 				CD525E76295A8DC8008CB800 /* PortfolioDataService.swift in Sources */,
 				CD525E74295A8CA2008CB800 /* PortfolioContainer.xcdatamodeld in Sources */,
 				CD525E6D29596955008CB800 /* PortfolioView.swift in Sources */,
-				CD8D4A2B2952EBA2002755C0 /* ContentView.swift in Sources */,
 				CDDB347E29557242002CEDE7 /* LocalFileManager.swift in Sources */,
 				CDF9D60229530F0B00B09CD6 /* CoinModel.swift in Sources */,
 				CD8D4A432952F09B002755C0 /* Double.swift in Sources */,
