@@ -183,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				CDF9D6072954279000B09CD6 /* HomeViewModel.swift */,
-				CD1AB79C295C3FD300F09213 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -310,6 +309,7 @@
 		CDFFCBE8295BECEF00D52E09 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CD1AB79C295C3FD300F09213 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

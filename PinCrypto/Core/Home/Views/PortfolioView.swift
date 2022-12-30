@@ -17,6 +17,10 @@ struct PortfolioView: View {
             ScrollView {
                 portfolioInputSection
             }
+            .background(
+                Color.theme.background
+                    .ignoresSafeArea()
+            )
             .navigationTitle("Edit Portfolio")
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarLeading) {
