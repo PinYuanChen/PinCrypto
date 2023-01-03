@@ -18,7 +18,6 @@
 		CD525E76295A8DC8008CB800 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E75295A8DC8008CB800 /* PortfolioDataService.swift */; };
 		CD8D4A292952EBA2002755C0 /* PinCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */; };
 		CD8D4A302952EBA3002755C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */; };
-		CD8D4A372952EF7F002755C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D4A362952EF7F002755C0 /* Assets.xcassets */; };
 		CD8D4A412952F09B002755C0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A3B2952F09B002755C0 /* String.swift */; };
 		CD8D4A422952F09B002755C0 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A3C2952F09B002755C0 /* UIApplication.swift */; };
 		CD8D4A432952F09B002755C0 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4A3D2952F09B002755C0 /* Double.swift */; };
@@ -33,6 +32,7 @@
 		CDDB34842955926D002CEDE7 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB34832955926D002CEDE7 /* StatisticView.swift */; };
 		CDDB3486295595D3002CEDE7 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB3485295595D3002CEDE7 /* HomeStatsView.swift */; };
 		CDDB34882955A83B002CEDE7 /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB34872955A83B002CEDE7 /* MarketDataModel.swift */; };
+		CDE1642E2963C4D1002D668B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE1642D2963C4D1002D668B /* Assets.xcassets */; };
 		CDE475CC295D699400B0D7FE /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE475CB295D699400B0D7FE /* ChartView.swift */; };
 		CDE475D0295D7F7500B0D7FE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE475CF295D7F7500B0D7FE /* SettingsView.swift */; };
 		CDE475D3295E7E5F00B0D7FE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE475D2295E7E5F00B0D7FE /* Launch Screen.storyboard */; };
@@ -63,7 +63,6 @@
 		CD8D4A252952EBA2002755C0 /* PinCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8D4A282952EBA2002755C0 /* PinCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCryptoApp.swift; sourceTree = "<group>"; };
 		CD8D4A2F2952EBA3002755C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CD8D4A362952EF7F002755C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		CD8D4A3B2952F09B002755C0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CD8D4A3C2952F09B002755C0 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		CD8D4A3D2952F09B002755C0 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		CDDB34832955926D002CEDE7 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		CDDB3485295595D3002CEDE7 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
 		CDDB34872955A83B002CEDE7 /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
+		CDE1642D2963C4D1002D668B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDE475CB295D699400B0D7FE /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		CDE475CF295D7F7500B0D7FE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CDE475D2295E7E5F00B0D7FE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 				CD8D4A472952F25C002755C0 /* Core */,
 				CD8D4A3A2952F06B002755C0 /* Extensions */,
 				CDF9D6092954372C00B09CD6 /* Services */,
-				CD8D4A362952EF7F002755C0 /* Assets.xcassets */,
+				CDE1642D2963C4D1002D668B /* Assets.xcassets */,
 				CD8D4A2E2952EBA3002755C0 /* Preview Content */,
 			);
 			path = PinCrypto;
@@ -374,7 +374,7 @@
 			files = (
 				CDE475D3295E7E5F00B0D7FE /* Launch Screen.storyboard in Resources */,
 				CD8D4A302952EBA3002755C0 /* Preview Assets.xcassets in Resources */,
-				CD8D4A372952EF7F002755C0 /* Assets.xcassets in Resources */,
+				CDE1642E2963C4D1002D668B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
